@@ -11543,7 +11543,7 @@ textarea[resize="horizontal"] {
   border: 1px solid #dee2e6;
   border-radius: 0;
   /* color: #6c757d; */
-  color: #f2f2f2;
+  color: #404040;
   font-weight: 500;
 }
 
@@ -11567,7 +11567,7 @@ textarea[resize="horizontal"] {
 
 .nav-pills .nav-link.active,.nav-pills .show>.nav-link {
   /* color: #288cff; */
-  color: #43c115;
+  color: #ffffff;
   background-color: transparent;
 }
 

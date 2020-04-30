@@ -73,6 +73,9 @@
                       <li class="nav-item">
                         <a class="nav-link mb-sm-3" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">I'm a Doctor</a>
                       </li>
+                      <li class="nav-item">
+                          <a class="nav-link mb-sm-3" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Lab Registration</a>
+                      </li>
                     </ul>
 
                     <div class="tab-content" id="myTabContent">
@@ -143,6 +146,31 @@
 
                               <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Get Started</button>
                             </form>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                          <form class="form-primary">
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="input_lab_firstname" placeholder="Lab Name" required autocomplete="off" />
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="input_lab_email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" id="input_lab_licno" placeholder="Licencse">
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <textarea class="form-control" placeholder="Block/Area/City/State/Pincode" rows="3" resize="none"></textarea>
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="input_lab_password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="input_lab_password" placeholder="Re-type password">
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Get Started</button>
+                          </form>
                         </div>
                     </div>
 
