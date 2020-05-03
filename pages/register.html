@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Probably the most complete UI kit out there. Multiple functionalities and controls added,  extended color palette and beautiful typography, designed as its own extended version of Bootstrap at  the highest level of quality.                             ">
   <meta name="author" content="Webpixels">
-  <title>FlexTest Registration</title>
+  <title>FlexiTest Registration</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
   <!-- Plugins -->
@@ -18,6 +18,14 @@
   <link rel="stylesheet" href="../assets/vendor/jquery-scrollbar/css/jquery-scrollbar.css">
   <link type="text/css" href="../assets/vendor/highlight/css/highlight.min.css" rel="stylesheet">
   <link type="text/css" href="../assets/css/demo.css" rel="stylesheet">
+  <style>
+    .consenttext{
+      font-size:120%;
+    }
+    h4{
+      margin-bottom: 2px;
+    }
+  </style>
 </head>
 
 
@@ -94,9 +102,9 @@
                               </div>
                               <div class="form-group">
                                   <div class="input-group input-group-transparent mb-4">
-                                      <input type="text" class="form-control" placeholder="Birthday">
+                                      <input type="text" class="form-control" placeholder="Date of Birth">
                                       <div class="input-group-append">
-                                          <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                          <span class="input-group-text"><i class="fas fa-calendar text-white"></i></span>
                                       </div>
                                   </div>
                               </div>
@@ -108,12 +116,22 @@
                                 <input type="password" class="form-control" id="input_uniqueid" placeholder="Adhaaar/Driving Liscence/PanCard">
                               </div>
                               <div class="form-group">
+                                <input type="text" class="form-control" id="input_nidf" placeholder="National ID front" required autocomplete="off" />
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="input_nidb" placeholder="National ID back" required autocomplete="off" />
+                              </div>
+                              <div class="form-group">
                                 <input type="password" class="form-control" id="input_password" placeholder="Password">
                               </div>
                               <div class="form-group">
                                 <input type="password" class="form-control" id="input_password" placeholder="Re-type password">
                               </div>
+                              <div class="custom-control custom-checkbox mb-3">
+                                  <input type="checkbox" class="custom-control-input" id="PatientConsent">
+                                  <label class="custom-control-label" for="PatientConsent"><h4 class="text-white">I consent to: </h4> <p class=consenttext>Virtual Care, COVID-19 Tests, In-app payments, Proof of Immunity, Status</p></label>
 
+                              </div>
                               <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Get Started</button>
                             </form>
                         </div>
@@ -163,14 +181,20 @@
                                 <textarea class="form-control" placeholder="Block/Area/City/State/Pincode" rows="3" resize="none"></textarea>
                             </div>
                             <div class="form-group">
+                              <input type="text" class="form-control" id="input_lab_digsign" placeholder="Digital Signature" required autocomplete="off" />
+                            </div>
+                            <div class="form-group">
                               <input type="password" class="form-control" id="input_lab_password" placeholder="Password">
                             </div>
+
                             <div class="form-group">
                               <input type="password" class="form-control" id="input_lab_password" placeholder="Re-type password">
                             </div>
 
+
                             <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Get Started</button>
                           </form>
+
                         </div>
                     </div>
 

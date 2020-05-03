@@ -11233,7 +11233,8 @@ textarea[resize="horizontal"] {
 }
 
 .focused .input-group-transparent .input-group-text {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: #288cff;
 }
 
 .input-group-transparent .form-control:not(:first-child) {
