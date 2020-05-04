@@ -42,6 +42,12 @@
           padding-left: 115px;
           padding-bottom: 15px;
         }
+        .nav-pills .nav-link.active{
+          color: #288cff;
+        }
+        .fileupload{
+          width: 200px;
+        }
     </style>
   </head>
   <body>
@@ -85,28 +91,258 @@
         </div>
       </div>
 
-      <div class="container d-flex align-items-center no-padding">
-              <div class="col walletcard">
-                <div class="row justify-content-center">
-                  <div class="col-lg-12">
-                    <div class="card bg-secondary">
-                      <div class="card-body">
-                        <center>
-                          <img src="../assets/images/prv/thumb-1.jpg" class="avatar avatar-lg avatarwallet">
+      <br>
 
-                          <br>
-                          <h3 class="usrname"><strong>Jane Doe</strong></h3>
+      <!-- Tab navigation for wallet -->
+
+      <div class="container">
+        <ul class="nav nav-pills nav-fill flex-column flex-sm-row" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link mb-sm-3 active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mb-sm-3" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">State Identification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mb-sm-3" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Insurance</a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="tab-content" id="myTabContent">
+          <!-- Employment Information -->
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                <div class="container d-flex align-items-center no-padding">
+                        <div class="col walletcard">
+                          <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                              <div class="card bg-secondary">
+                                <div class="card-body">
+                                  <center>
+                                    <img src="../assets/images/prv/thumb-1.jpg" class="avatar avatar-lg avatarwallet">
+
+                                    <br>
+                                    <h3 class="usrname"><strong>Jane Doe</strong></h3>
 
 
-                        </center>
-                        <p><h4>Identity Details:-</h4></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                  </center>
+                                  <div class="container">
+                                    <p><h4>Identity Details:-</h4></p>
 
+                                    <form class="form-secondary">
+
+                                      <div class="form-group">
+                                        <input type="text" class="form-control yesdid" id="emp_name" placeholder="Employer Name">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <input type="text" class="form-control yesdid" id="emp_id_no" placeholder="Employer Identification Number">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <input type="text" class="form-control yesdid" id="employee_id_no" placeholder="Employee Identification Number">
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label>Empyer Address</label>
+                                          <textarea class="form-control" id="emp_address" placeholder="Block/Area/City/State/Pincode" rows="3" resize="none"></textarea>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <input type="tel" class="form-control yesdid" id="emp_phno" placeholder="Employee Phone Number">
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="file-1">Upload Your Employer Identity Card :-</label>
+                                        <div class="fileupload">
+
+                                            <input type="file" name="file-1[]" id="file-1" class="custom-input-file" data-multiple-caption="{count} files selected" multiple />
+                                            <label for="file-1">
+                                                <i class="fa fa-upload"></i>
+                                                <span>Choose a file…</span>
+                                            </label>
+                                        </div>
+                                      </div>
+                                      <button type="submit" class="btn btn-md bg-primary mt-4 text-white">Save Changes</button>
+
+                                    </form>
+
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <!-- State Information -->
+            <div class="container d-flex align-items-center no-padding">
+                    <div class="col walletcard">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="card bg-secondary">
+                            <div class="card-body">
+                              <center>
+                                <img src="../assets/images/prv/thumb-1.jpg" class="avatar avatar-lg avatarwallet">
+
+                                <br>
+                                <h3 class="usrname"><strong>Jane Doe</strong></h3>
+
+
+                              </center>
+                              <div class="container">
+                                <p><h4>Identity Details:-</h4></p>
+
+                                <form class="form-secondary">
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control yesdid" id="state_name" placeholder="State of Residence">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control yesdid" id="state_id_no" placeholder="State Identification Number">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <div class="input-group input-group-transparent mb-4">
+                                          <input type="text" class="form-control" placeholder="Issue Date">
+                                          <div class="input-group-append bg-primary">
+                                              <span class="input-group-text"><i class="fas fa-calendar text-white"></i></span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="state_" placeholder=" Adhaar Card Number">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="file-1">Upload State Identity Card Document:-</label>
+                                    <div class="fileupload">
+
+                                        <input type="file" name="file-1[]" id="file-1" class="custom-input-file" data-multiple-caption="{count} files selected" multiple />
+                                        <label for="file-1">
+                                            <i class="fa fa-upload"></i>
+                                            <span>Choose a file…</span>
+                                        </label>
+                                    </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-md bg-primary mt-4 text-white">Save Changes</button>
+
+                                </form>
+
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
               </div>
+
+          </div>
+
+
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <!-- Insurance information -->
+            <div class="container d-flex align-items-center no-padding">
+                    <div class="col walletcard">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="card bg-secondary">
+                            <div class="card-body">
+                              <center>
+                                <img src="../assets/images/prv/thumb-1.jpg" class="avatar avatar-lg avatarwallet">
+
+                                <br>
+                                <h3 class="usrname"><strong>Jane Doe</strong></h3>
+
+
+                              </center>
+                              <div class="container">
+                                <p><h4>Identity Details:-</h4></p>
+
+                                <form class="form-secondary">
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control yesdid" id="insur_acces_id" placeholder="Accession ID">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control yesdid" id="insur_id_no" placeholder="Patient ID">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <div class="input-group input-group-transparent mb-4">
+                                          <input type="text" class="form-control" placeholder="Test Completion date">
+                                          <div class="input-group-append bg-primary">
+                                              <span class="input-group-text"><i class="fas fa-calendar text-white"></i></span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="insur_instu_serial_no" placeholder="Instrument Serial Number">
+                                  </div>
+
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="insur_result" placeholder="Result">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="insur_summary" placeholder="Summary">
+                                  </div>
+
+                                  <div class="form-group">
+                                      <div class="input-group input-group-transparent mb-4">
+                                          <input type="text" class="form-control" placeholder="Issue Date">
+                                          <div class="input-group-append bg-primary">
+                                              <span class="input-group-text"><i class="fas fa-calendar text-white"></i></span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                      <div class="input-group input-group-transparent mb-4">
+                                          <input type="text" class="form-control" placeholder="Expiry Date">
+                                          <div class="input-group-append bg-primary">
+                                              <span class="input-group-text"><i class="fas fa-calendar text-white"></i></span>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="file-1">Upload Test Result Document:-</label>
+                                    <div class="fileupload">
+
+                                        <input type="file" name="file-1[]" id="file-1" class="custom-input-file" data-multiple-caption="{count} files selected" multiple />
+                                        <label for="file-1">
+                                            <i class="fa fa-upload"></i>
+                                            <span>Choose a file…</span>
+                                        </label>
+                                    </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-md bg-primary mt-4 text-white">Save Changes</button>
+
+                                </form>
+
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
         </div>
 
         <div class="container">
@@ -132,7 +368,7 @@
 
     </main>
 
-    
+
     <!-- Core -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/popper/popper.min.js"></script>
