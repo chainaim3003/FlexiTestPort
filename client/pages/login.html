@@ -15,11 +15,10 @@
     <link rel="stylesheet" href="../assets/vendor/jquery-scrollbar/css/jquery-scrollbar.css">
     <link type="text/css" href="../assets/vendor/highlight/css/highlight.min.css" rel="stylesheet">
     <link type="text/css" href="../assets/css/demo.css" rel="stylesheet">
-    <title>FlexiTest Log in</title>
+    <link type="text/css" href="../assets/css/custom.css" rel="stylesheet">
+    <title>Patient Log in</title>
     <style media="screen">
-      .cardtext{
-        margin-top: 16px;
-      }
+
     </style>
   </head>
   <body>
@@ -45,17 +44,9 @@
             </li>
             <div class="dropdown-divider d-lg-none my-4"></div>
             <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Social Media</h6>
+
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://instagram.com/webpixelsofficial/" target="_blank"><i class="fab fa-instagram"></i><span class="ml-2 d-lg-none">Instagram</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://web.facebook.com/webpixels" target="_blank"><i class="fab fa-facebook"></i><span class="ml-2 d-lg-none">Facebook</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://dribbble.com/webpixels" target="_blank"><i class="fab fa-dribbble"></i><span class="ml-2 d-lg-none">Dribbble</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://github.com/webpixels" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
+              <a class="nav-link nav-link-icon" href="https://github.com/chainaim3003/FlexiTest" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
             </li>
           </ul>
         </div>
@@ -63,39 +54,68 @@
     </nav>
     <main class="main">
       <section class="py-xl bg-cover bg-size--cover" style="background-image: url('../assets/images/backgrounds/img-5.jpg')">
-      <span class="mask bg-primary alpha-6"></span>
+      <span class="mask bg-primary alpha-4"></span>
       <div class="container d-flex align-items-center no-padding">
         <div class="col">
           <div class="row justify-content-center">
             <div class="col-lg-5">
               <div class="card bg-primary text-white">
                 <div class="card-body">
-                  <button type="button" class="btn btn-primary btn-nobg btn-zoom--hover mb-5">
-                    <span class="btn-inner--icon"><i class="fas fa-arrow-left"></i></span>
-                  </button>
+
                   <span class="clearfix"></span>
                   <img src="../assets/images/brand/icon2.png" style="width: 50px;">
                   <h4 class="heading h3 text-white pt-3 pb-5">Welcome back,<br>
                     login to your account.</h4>
-                  <form class="form-primary">
-                    <div class="custom-control custom-checkbox mb-3">
-                        <input type="checkbox" class="custom-control-input didcheck" id="DIDcheck">
-                        <label class="custom-control-label" for="DIDcheck">I have a DID</label>
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control nodid" id="input_email" placeholder="Your email">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control nodid" id="input_password" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control yesdid" id="input_did" placeholder="Enter your DID">
-                    </div>
-                    <div class="text-right mt-4"><a href="#" class="text-white">Forgot password?</a></div>
-                    <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Sign in</button>
-                  </form>
-                  <h5 class="cardtext text-center text-white ortext">OR</h5>
-                  <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Register now</button>
+                    <form class="form-primary">
+                      <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input didcheck" id="DIDcheck">
+                          <label class="custom-control-label" for="DIDcheck">I have a DID</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control nodid" id="input_email" placeholder="Your email">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control nodid" id="input_password" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control yesdid" id="input_did" placeholder="Enter your DID">
+                      </div>
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="Consentcheck" data-toggle="modal" data-target="#Consentcheckmod">
+                          <label class="custom-control-label" for="Consentcheck">I consent to teletest and pay , report to public health  for 6 months and I am aware and agree that i can remove my consent at any time, after which no details will be shared to public health.</label>
+                        </div>
+                            <!-- Consent Modal -->
+                              <div class="modal modal-secondary fade" id="Consentcheckmod" tabindex="-1" role="dialog" aria-labelledby="Consentcheckmodal" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal_title_6">Terms and Conditions</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="py-3 text-center">
+                                                <i class="fas fa-exclamation-circle fa-4x"></i>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">No Thanks</button>
+                                            <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">I Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal ends -->
+                      </div>
+
+                      <button type="submit" class="btn btn-block btn-lg bg-white mt-4">Sign in</button>
+
+                    </form>
                 </div>
               </div>
             </div>
@@ -103,6 +123,41 @@
         </div>
       </div>
     </main>
+
+    <footer class="pt-5 pb-3 footer  footer-dark bg-tertiary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-10">
+            <div class="pr-lg-5">
+              <h1 class="heading h6 text-uppercase font-weight-700 mb-3"><strong>Flexi</strong> Test</h1>
+              <p>Patient-centered, privacy protected testing framework leveraging DLT/immutable ledgers to run a point of care or home test. Objective to reduce the lead time around current processes, increase safety for both patients and doctors ( including a identity based provenance )and consumer-based consent based data share. Have a design. Working with Lab partners. Initial focus is India, but looking to build as neutral as possible. Need identity experts, d-app developers and REST API. Also, helps labs report on quality of tests.</p>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-md-2">
+            <h5 class="heading h6 text-uppercase font-weight-700 mb-3">About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex align-items-center">
+
+          <ul class="nav ml-lg-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/chainaim3003/FlexiTest" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- Core -->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
