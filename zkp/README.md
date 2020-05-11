@@ -81,5 +81,7 @@ Steps:
 Thus, this Zero Knowledge proof successfully informs the verifier about the status of  
 user’s COVID19 result without informing the verifier about any of the user details.
 
+
+
 <img src="images/zkpIMP.png">
 
