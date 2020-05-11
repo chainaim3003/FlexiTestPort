@@ -83,5 +83,5 @@ user’s COVID19 result without informing the verifier about any of the user det
 
 
 
-<img src="images/zkpIMP.png">
+<img src="images/zkpIMP.PNG">
 
