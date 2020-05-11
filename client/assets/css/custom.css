@@ -66,6 +66,10 @@
 .logincard{
   height: 650px;
 }
+.lessmargin{
+  font-size: 100%;
+  margin-bottom: 2px;
+}
 .avatpad{
   padding-top: 10px;
 }
