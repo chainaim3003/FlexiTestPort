@@ -1,0 +1,19 @@
+def covidtest(private field count) -> (field):
+ field test = if count ==1 then 1 else 0
+field incrcount = incrcount+test
+ return test
+ 
+ 
+def transactioncount(private field trancount) -> (field):
+ field incrtrancount= trancount+1
+ field resulttrancount = if incrtrancount >=10 then 1 &&  else 0
+ field passresulttrancount= covidtest(resulttrancount)
+ return passresulttrancount
+ 
+ 
+def main(private field s)-> (field):
+ field stautus= if s==1 then transactioncount(0)  else 0
+ field result = if stautus >=1 then 1 else 0 
+ return result
+ 
+ 
