@@ -7,3 +7,8 @@ https://drive.google.com/file/d/1RKyid59iFDNGOeZRfvwoWEAeCE5RFFSe/view
 
 ## Demo video 
 https://drive.google.com/file/d/1IRh3aC5hpP3xY_oWk0oPTHrW60UFwWXV/view
+
+
+## FlexiTest-SolutionArchitectureAndDesign
+
+https://drive.google.com/open?id=1DPH1gaQqZRiRtge-0KJgk8j5sv6UTeYB
