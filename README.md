@@ -11,7 +11,7 @@ Patient-centered, privacy protected testing framework leveraging DLT/immutable l
 
 
 
-<img src="images/FlexiTest4.BMP">
+<img src="images/FlexiTest4.bmp">
 
 
 <img src="images/FlexiTestTeamSmall.png">
