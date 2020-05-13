@@ -19,11 +19,11 @@ Thanks for the contributions.
 
 At Home Collection; At Lab Execution
 
-<img src="images/FlexiTest4ExecLab.bmp">
+<img src="images/FlexiTest4-ExecLab.bmp">
 
 At Home Collection; At Home Execution ( At Home Antibody Tests )
 
-<img src="images/FlexiTest4ExecHome.bmp">
+<img src="images/FlexiTest4-ExecHome.bmp">
 
 <img src="zkp/images/ipfs.png"> <img src="zkp/images/json.png"><img src="zkp/images/fire.png" width="100">
 
