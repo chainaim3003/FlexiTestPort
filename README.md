@@ -7,3 +7,11 @@ Patient-centered, privacy protected testing framework leveraging DLT/immutable l
 
 
 * ### [FlexiTest-SolutionArchitectureAndDesign:](https://drive.google.com/open?id=1DPH1gaQqZRiRtge-0KJgk8j5sv6UTeYB) Please follow the link
+
+
+
+
+<img src="images/FlexiTest4.BMP">
+
+
+<img src="images/FlexiTestTeamSmall.png">
