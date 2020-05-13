@@ -14,19 +14,21 @@ Thanks for the contributions.
 
 ## Illustrations
 
-Tele Test and Passport Workflow
+
+# FlexiTest : Tele Test and Passport Workflow
 
 <img src="images/FlexiTest4TestPassport.bmp">
 
 
+<img src="zkp/images/ipfs.png"> <img src="zkp/images/json.png"><img src="zkp/images/fire.png" width="100">
 
- ZK Proof to verify Patient(or Consumer) safety - in this case,  has tested negative for Covid19. 
+
+
+# FlexiTest :  ZK Proof to verify Patient(or Consumer) safety
  
-   <img src="images/covid.png">
+ <img src="zkp/images/covid.png">
 
 The Checker is an abstraction and could include individuals or organizations such as  airport authorities, event management authorities, law enforcement or any such organization who has gained and can prove the verifier status.
-
-
 
 <img src="zkp/images/zkpIMP.PNG">
 
