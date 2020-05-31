@@ -6,7 +6,7 @@
   height: 200px;
   margin-bottom: 15px;
   vertical-align: middle;
-  horizontal-align: middle;
+  /* horizontal-align: middle; */
   /* text-align: center; */
 }
 .btn-inner--text{
@@ -30,7 +30,7 @@
 .avatarwallet{
   width: 110px;
   height: 110px;
-  text-size: 200%;
+  font-size: 200%;
 }
 .usrname{
   padding-top: 15px;
@@ -39,7 +39,7 @@
   width: 150px;
 }
 .btnrow{
-  padding-left: 50px:
+  padding-left: 50px;
 }
 .padleft{
   padding-left: 115px;
@@ -64,7 +64,7 @@
   width: 150px;
 }
 .logincard{
-  height: 720px;
+  height: 680px;
 }
 .lessmargin{
   font-size: 100%;
@@ -75,7 +75,18 @@
 }
 .dbutn{
   padding-right: 46px;
-}
+} 
 .btnreport{
   width: 130px;
+}
+.checkerbtn{
+  width: 230px;
+}
+
+.checkbtnleft{
+  padding-left: 50px;
+}
+
+.resultupld{
+  width: 50px;
 }
