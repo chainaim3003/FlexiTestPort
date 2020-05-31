@@ -64,7 +64,7 @@
   width: 150px;
 }
 .logincard{
-  height: 650px;
+  height: 720px;
 }
 .lessmargin{
   font-size: 100%;
@@ -72,4 +72,10 @@
 }
 .avatpad{
   padding-top: 10px;
+}
+.dbutn{
+  padding-right: 46px;
+}
+.btnreport{
+  width: 130px;
 }
