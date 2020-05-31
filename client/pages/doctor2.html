@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Probably the most complete UI kit out there. Multiple functionalities and controls added,  extended color palette and beautiful typography, designed as its own extended version of Bootstrap at  the highest level of quality.                             ">
     <meta name="author" content="Webpixels">
-    <title>Doctor Dashboard</title>
+    <title>Patient Dashboard</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
     <!-- Plugins -->
@@ -82,10 +82,10 @@
                                       <a class="nav-link mb-sm-3" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Profile</a>
                                   </li>
                                   <li class="nav-item">
-                                      <a class="nav-link mb-sm-3 active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Appointments</a>
+                                      <a class="nav-link mb-sm-3" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Appointments</a>
                                   </li>
                                   <li class="nav-item">
-                                      <a class="nav-link mb-sm-3" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Results </a>
+                                      <a class="nav-link mb-sm-3 active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Results </a>
                                   </li>
                               </ul>
                               <br><br>
@@ -134,7 +134,7 @@
                                 <!-- Identity Tab ends -->
 
                                 <!-- Appointment Tab -->
-                                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     <div class="container">
 
                                           <table class="table table-hover table-cards align-items-center">
@@ -157,7 +157,7 @@
                                                       <td>1 May 2020 1400 hrs</td>
                                                       <td>10043</td>
                                                       <td>
-                                                        <button type="button" class="btn btn-sm btn-primary">Perform Teletest and Submit to Lab</button>
+                                                        <button type="button" class="btn btn-sm btn-primary" onclick="window.location.href = 'Lab.html';">Perform Teletest and Submit to Lab</button>
                                                       </td>
                                                   </tr>
                                                   <tr class="table-divider"></tr>
@@ -171,7 +171,7 @@
                                 <!-- Appointment Tab ends -->
 
                                 <!-- Results tab -->
-                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                   <div class="container">
                                     <table class="table table-hover table-cards align-items-center">
                                         <thead>
@@ -186,40 +186,17 @@
                                         <tbody>
                                             <tr class="table-divider"></tr>
                                             <tr class="bg-white">
-                                              <td>Shobit Puri</td>
-                                              <td>1004</td>
-                                              <td class="text-danger">Positive</td>
+                                              <td>Jane Doe</td>
+                                              <td>1001</td>
+                                              <td class="text-success"><strong>Negative</strong</td>
                                               <td>
                                                 <button type="button" class="btn btn-sm btn-secondary">View Result</button>
                                               </td>
                                               <td>
-                                                <button type="button" class="btn btn-sm btn-primary">Send</button>
+                                                <button type="button" class="btn btn-sm btn-primary">Send To Patient</button>
                                               </td>
                                             </tr>
-                                            <tr class="table-divider"></tr>
-                                            <tr class="bg-white">
-                                              <td>Ram Singh</td>
-                                              <td>1005</td>
-                                              <td class="text-success">Negative</td>
-                                              <td>
-                                                <button type="button" class="btn btn-sm btn-secondary">View Result</button>
-                                              </td>
-                                              <td>
-                                                <button type="button" class="btn btn-sm btn-primary">Send</button>
-                                              </td>
-                                            </tr>
-                                            <tr class="table-divider"></tr>
-                                            <tr class="bg-white">
-                                              <td>Shyam Singh</td>
-                                              <td>1006</td>
-                                              <td class="text-black">Test Pending</td>
-                                              <td>
-                                                <button type="button" class="btn btn-sm btn-secondary" disabled>View Result</button>
-                                              </td>
-                                              <td>
-                                                <button type="button" class="btn btn-sm btn-primary" disabled>Send</button>
-                                              </td>
-                                            </tr>
+
 
                                         </tbody>
                                     </table>
