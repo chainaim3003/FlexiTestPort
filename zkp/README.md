@@ -85,3 +85,9 @@ user’s COVID19 result without informing the verifier about any of the user det
 
 <img src="images/zkpIMP.PNG">
 
+# Screenshots
+<img src="images/compile-ss.png" width="400"> <img src="images/setup-ss.png" width="455"> <img src="images/compute_witness-ss.png" width="400"> <img src="images/generate_proof-ss.png" width="425">
+#
+
+### proof.json file for the verefier input
+<img src="images/proof_json-ss.png">
